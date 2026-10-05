@@ -1,0 +1,7 @@
+{
+  "/icon.png/route": "/icon.png",
+  "/apple-icon.png/route": "/apple-icon.png",
+  "/_not-found/page": "/_not-found",
+  "/page": "/",
+  "/opengraph-image/route": "/opengraph-image"
+}
