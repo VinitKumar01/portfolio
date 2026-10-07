@@ -139,7 +139,7 @@ export const skillCategories: SkillCategory[] = [
       {
         name: "AWS & Linux",
         level: "Proficient",
-        tags: ["EC2", "Systemd Services", "Linux Admin"],
+        tags: ["EC2", "Linux Admin", "Server Deployment"],
       },
       {
         name: "Git & Neovim",

@@ -33,9 +33,9 @@
 }
 
 @theme inline {
-  --color-canvas: #09090b;
-  --color-surface: #121215;
-  --color-elevated: #18181b;
+  --color-canvas: #040405;
+  --color-surface: #0a0a0c;
+  --color-elevated: #121214;
 
   --color-zinc-50: #fafafa;
   --color-zinc-100: #f4f4f5;
@@ -61,7 +61,7 @@
 }
 
 :root {
-  --background: #09090b;
+  --background: #040405;
   --foreground: #fafafa;
 }
 
@@ -70,18 +70,30 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-position: center top;
+  background-attachment: fixed;
+  cursor: none; /* Hide default cursor since we have the companion */
+}
+
+a,
+button {
+  cursor: none; /* Make sure links and buttons don't show the default pointer */
 }
 
 .ambient-glow {
   background:
     radial-gradient(
       circle at 50% -10%,
-      rgba(249, 115, 22, 0.05) 0%,
+      rgba(249, 115, 22, 0.04) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 80% 15%,
-      rgba(255, 255, 255, 0.015) 0%,
+      rgba(255, 255, 255, 0.02) 0%,
       transparent 40%
     );
 }
@@ -92,38 +104,37 @@ body {
 
 .clean-card {
   position: relative;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  background: linear-gradient(
-    180deg,
-    rgba(24, 24, 27, 0.5) 0%,
-    rgba(18, 18, 21, 0.3) 100%
-  );
-  border: 1px solid rgba(39, 39, 42, 0.8);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background: rgba(18, 18, 20, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
 }
 
 .clean-card::before {
   content: "";
   position: absolute;
-  inset-inline: 0;
-  top: 0;
-  height: 1px;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
   background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.08) 50%,
-    transparent 100%
+    to bottom right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.01)
   );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   pointer-events: none;
 }
 
 .clean-card:hover {
-  background: linear-gradient(
-    180deg,
-    rgba(28, 28, 32, 0.7) 0%,
-    rgba(20, 20, 24, 0.5) 100%
-  );
-  border-color: rgba(63, 63, 70, 0.9);
-  transform: translateY(-1px);
+  background: rgba(24, 24, 28, 0.6);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px -4px rgba(0, 0, 0, 0.6);
 }
 
 ::-webkit-scrollbar {
@@ -131,7 +142,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #09090b;
+  background: #040405;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -141,4 +152,12 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

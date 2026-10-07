@@ -2,17 +2,17 @@ import { ProfileData } from "@/types";
 
 export const profileData: ProfileData = {
   name: "Vinit Kumar",
-  title: "Full-Stack Software Engineer & Systems Builder",
+  title: "Full-Stack Software Engineer",
   tagline:
-    "Building resilient execution engines, real-time architectures, and intelligent AI systems from first principles.",
+    "Building resilient web applications, workflow engines, and intelligent platforms from first principles.",
   location: "Pilani, Rajasthan, India",
   timezone: "Asia/Kolkata",
   email: "vinitk81144@gmail.com",
   availability: {
     status: "Available",
-    headline: "Open for Full-Stack & Systems Roles",
+    headline: "Open for Full-Stack Roles",
     subline:
-      "Seeking high-impact teams building complex web platforms, developer tools, or AI systems.",
+      "Seeking high-impact teams building modern web platforms, product applications, or developer tools.",
   },
   socials: {
     x: "https://x.com/vinitxcodes",
@@ -34,7 +34,7 @@ export const profileData: ProfileData = {
     {
       label: "Languages",
       value: "Go, TS, JS, Python",
-      detail: "Typed, concurrent, scalable systems",
+      detail: "Type-safe, concurrent, full-stack",
     },
     {
       label: "Architecture",

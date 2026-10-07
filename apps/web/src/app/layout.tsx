@@ -30,7 +30,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vinit.dev"),
-  title: "Vinit Kumar | Full-Stack Software Engineer & Systems Builder",
+  title: "Vinit Kumar | Full-Stack Software Engineer",
   description:
     "Full-stack software engineer building workflow automation engines, edge backends, and cloud platforms. Based in Pilani, Rajasthan.",
   keywords: [
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
-    title: "Vinit Kumar | Full-Stack Software Engineer & Systems Builder",
+    title: "Vinit Kumar | Full-Stack Software Engineer",
     description:
       "Full-stack software engineer building workflow automation engines, edge backends, and cloud platforms.",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vinit Kumar | Full-Stack Software Engineer & Systems Builder",
+    title: "Vinit Kumar | Full-Stack Software Engineer",
     description:
       "Full-stack software engineer building workflow automation engines, edge backends, and cloud platforms.",
     creator: "@vinitxcodes",

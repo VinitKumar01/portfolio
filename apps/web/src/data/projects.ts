@@ -8,9 +8,9 @@ export const projectsData: Project[] = [
       "DAG-based visual workflow automation engine with Go backend and Next.js + ReactFlow canvas",
     period: "2025 - Present",
     type: "Personal Project",
-    role: "Creator & Systems Engineer",
+    role: "Creator & Full-Stack Developer",
     summary:
-      "Engineered an n8n-inspired visual workflow automation platform to explore distributed graph orchestration from first principles. Features a high-concurrency Go execution engine paired with a reactive Next.js and ReactFlow canvas.",
+      "Engineered an n8n-inspired visual workflow automation platform for DAG-based execution and graph orchestration. Features a high-concurrency Go execution engine paired with a reactive Next.js and ReactFlow canvas.",
     description:
       "g8g models automation workflows as Directed Acyclic Graphs (DAGs). The Go backend handles topological sorting, cycle detection, dynamic webhook routing, cron scheduling, and parallel execution of independent graph branches using lightweight goroutines and PostgreSQL persistence.",
     highlights: [
@@ -151,7 +151,7 @@ export const projectsData: Project[] = [
       "Production vehicle comparison & listing platform serving a client audience of over 58,000 YouTube subscribers",
     period: "2024",
     type: "Client Project",
-    role: "Full-Stack Developer & DevOps",
+    role: "Full-Stack Developer",
     summary:
       "Engineered and deployed a production-grade vehicle showcase and side-by-side comparison platform for a commercial automotive client with an audience of over 58,000 YouTube subscribers.",
     description:
@@ -160,7 +160,7 @@ export const projectsData: Project[] = [
       "Developed vehicle management platform with side-by-side spec comparison engine, multi-criteria filtering, and role-based administrative dashboard using Clerk authentication.",
       "Implemented high-performance Express backend with Redis caching, delivering sub-50ms query responses for popular vehicle lookups.",
       "Configured UploadThing CDN asset pipeline for optimized multi-angle vehicle imagery and downloadable specification brochures.",
-      "Owned AWS EC2 cloud deployment, diagnosing boot script failure modes and implementing a custom Linux systemd startup service for reliable automated recovery.",
+      "Owned AWS EC2 cloud deployment, configuring containerized runtime and automated background process recovery for reliable operation.",
       "Operated in production for 4+ consecutive months with zero reported downtime, serving thousands of active visitors.",
     ],
     techStack: [
@@ -203,10 +203,10 @@ export const projectsData: Project[] = [
         "A TypeScript monorepo combining a Next.js App Router frontend with an Express API backend, Redis in-memory cache, and PostgreSQL database. Scheduled Node-Cron jobs handle cache invalidation and clean up pending uploads.",
       keyDecisions: [
         "Employed Redis caching for vehicle model comparison endpoints, reducing database queries by over 70%.",
-        "Wrote custom Linux systemd unit file on AWS EC2 to guarantee automatic restart and log rotation across server reboots.",
+        "Configured automated restart and process management on AWS EC2 to guarantee continuous service availability and log rotation across server reboots.",
       ],
       technicalChallenges: [
-        "Overcoming AWS EC2 boot initialization failures by diagnosing Node environment race conditions and writing systemd watchdog services.",
+        "Overcoming AWS EC2 boot initialization failures by diagnosing Node environment race conditions and automating background service recovery.",
         "Handling high-resolution multi-image uploads through direct-to-CDN presigned pipelines to prevent server memory bloat.",
       ],
       outcomes: [

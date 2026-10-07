@@ -28,7 +28,7 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     period: "2024",
-    title: "Full-Stack Developer & Cloud DevOps (Client Project)",
+    title: "Full-Stack Developer (Client Project)",
     organization: "TruckSpark Platform",
     location: "Remote / Commercial Client",
     type: "Client Work",
@@ -36,37 +36,9 @@ export const experienceData: ExperienceItem[] = [
       "Engineered and deployed a production-ready vehicle comparison platform for a commercial client with an audience of over 58,000 YouTube subscribers.",
     bullets: [
       "Built custom admin management dashboard, vehicle comparison engine, and CDN asset pipelines.",
-      "Owned AWS EC2 infrastructure deployment; diagnosed boot script failure modes and implemented a custom Linux systemd service for zero-downtime operation.",
+      "Managed AWS EC2 infrastructure deployment and automated background process recovery for zero-downtime operation.",
       "Successfully sustained 100% production uptime across 4 months of commercial operation.",
     ],
-    tags: [
-      "Next.js",
-      "PostgreSQL",
-      "Redis",
-      "AWS EC2",
-      "Systemd",
-      "Docker",
-      "Clerk Auth",
-    ],
-  },
-  {
-    period: "2024 - 2028",
-    title: "B.Tech in Computer Science and Engineering",
-    organization: "Maharshi Dayanand University",
-    location: "Rohtak, Haryana, India",
-    type: "Education",
-    summary:
-      "Rigorous foundational computer science curriculum covering algorithms, data structures, computer networks, database management systems, and distributed computing.",
-    bullets: [
-      "Focusing on distributed systems, concurrent programming in Go, and modern full-stack web platforms.",
-      "Active open-source contributor building orchestration engines and developer infrastructure tooling.",
-    ],
-    tags: [
-      "Algorithms",
-      "Data Structures",
-      "Operating Systems",
-      "Concurrency",
-      "Computer Networks",
-    ],
+    tags: ["Next.js", "PostgreSQL", "Redis", "AWS EC2", "Docker", "Clerk Auth"],
   },
 ];

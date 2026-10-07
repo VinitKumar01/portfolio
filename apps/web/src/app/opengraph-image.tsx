@@ -1,8 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt =
-  "Vinit Kumar - Full-Stack Software Engineer & Systems Builder";
+export const alt = "Vinit Kumar - Full-Stack Software Engineer";
 export const size = {
   width: 1200,
   height: 630,
@@ -87,8 +86,8 @@ export default async function Image() {
             lineHeight: 1.4,
           }}
         >
-          Full-Stack Software Engineer &amp; Systems Builder. Building workflow
-          automation engines, edge backends, and cloud platforms.
+          Full-Stack Software Engineer. Building workflow automation engines,
+          edge backends, and cloud platforms.
         </div>
       </div>
 
